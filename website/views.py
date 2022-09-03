@@ -1,4 +1,4 @@
-from flask import Blueprint
+from flask import Blueprint, render_template
 
 # Think of this as Urls.
 views = Blueprint('views', __name__)
@@ -6,4 +6,4 @@ views = Blueprint('views', __name__)
 
 @views.route('/')
 def home():
-    return "<h1>Hello, Flask!</h1>"
+    return render_template("home.html")
