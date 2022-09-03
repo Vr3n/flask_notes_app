@@ -1,4 +1,3 @@
-
 <!-- -->
 {% extends 'base.html' %}
 
@@ -8,6 +7,54 @@
 <!-- Content -->
 
 {% block content %}
-<h1>Singup</h1>
+
+<!-- Signup form -->
+<form action="" method="post">
+  <h3 class="align-center">Sign Up</h3>
+  <div class="form-group">
+    <label for="email">Email</label>
+    <input
+      type="email"
+      name="email"
+      id="email"
+      class="form-control"
+      placeholder="Enter email"
+    />
+  </div>
+  <div class="form-group">
+    <label for="first_name">First Name</label>
+    <input
+      type="first_name"
+      name="first_name"
+      id="first_name"
+      class="form-control"
+      placeholder="Enter First Name"
+    />
+  </div>
+  <div class="form-group">
+    <label for="password1">Password</label>
+    <input
+      type="password"
+      name="password1"
+      id="password1"
+      class="form-control"
+      placeholder="Enter Password"
+    />
+  </div>
+  <div class="form-group">
+    <label for="password2">Confirm Password</label>
+    <input
+      type="password"
+      name="password2"
+      id="password2"
+      class="form-control"
+      placeholder="Confirm Password"
+    />
+  </div>
+  <br />
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+<!-- End Signup form -->
+
 {% endblock content %}
-<!-- Content -->
+<!-- End of Content -->
